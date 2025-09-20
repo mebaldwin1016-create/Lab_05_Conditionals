@@ -14,6 +14,8 @@ public class Task1_ShipCost {
 
         System.out.println("What's your item price?");
 
+        itemCost = in.nextDouble();
+
         if(itemCost >= FREE_SHIP_LIMIT)
         {
             shipCost = 0;
@@ -22,6 +24,9 @@ public class Task1_ShipCost {
         {
             shipCost = itemCost * SHIP_RATE;
         }
+
+        totalCost = itemCost + shipCost;
+        System.out.println("Your total cost is " + totalCost);
 
 
     }
